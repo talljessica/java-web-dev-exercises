@@ -1,6 +1,8 @@
 package exercises;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArrayListPractice {
@@ -34,5 +36,22 @@ public class ArrayListPractice {
         ArrayList<String> words = new ArrayList<>();
         String drSeuss = "I would not, could not, in a box. I would not, could not with a fox.\n" +
         "I will not eat them in a house. I will not eat them with a mouse.";
+        String delims = "[ ,.]";
+        String[] drSeussSplit = drSeuss.split(delims);
+        System.out.println(Arrays.toString(drSeussSplit));
+
+        List<String> drSeussList = new ArrayList<>();
+        drSeussList = Arrays.asList(drSeussSplit);
+        System.out.println(drSeussList);
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("How many letters would you like to search?");
+        int numLetters = input.nextInt();
+
+        for(int i=0;i<drSeussList.size();i++){
+            if(drSeussList.get(i).length()==numLetters) {
+                System.out.println(drSeussList.get(i));
+            }
+        }
     }
 }
