@@ -14,19 +14,19 @@ public class Teacher {
         this.yearsTeaching = yearsTeaching;
     }
 
-    public void setFirstName(String firstName) {
+    private void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void setLastName(String lastName) {
+    private void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public void setSubject(String subject) {
+    private void setSubject(String subject) {
         this.subject = subject;
     }
 
-    public void setYearsTeaching(int yearsTeaching) {
+    private void setYearsTeaching(int yearsTeaching) {
         this.yearsTeaching = yearsTeaching;
     }
 }
