@@ -36,16 +36,16 @@ public class Student {
         return gpa;
     }
 
-    public void setName(String aName) {
+    private void setName(String aName) {
         name = aName;
     }
-    public void setStudentId(int aStudentId) {
+    private void setStudentId(int aStudentId) {
         studentId = aStudentId;
     }
-    public void setNumberOfCredits(int aNumberOfCredits) {
+    private void setNumberOfCredits(int aNumberOfCredits) {
         numberOfCredits = aNumberOfCredits;
     }
-    public void setGpa(double aGpa){
+    private void setGpa(double aGpa){
         gpa = aGpa;
     }
 }
