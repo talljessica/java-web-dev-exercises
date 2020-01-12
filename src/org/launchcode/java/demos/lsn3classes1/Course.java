@@ -25,15 +25,15 @@ public class Course {
         return studentRoster;
     }
 
-    public void setCourseName(String courseName) {
+    private void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
-    public void setCreditHours(double creditHours) {
+    private void setCreditHours(double creditHours) {
         this.creditHours = creditHours;
     }
 
-    public void setStudentRoster(HashMap<String, Integer> studentRoster) {
+    private void setStudentRoster(HashMap<String, Integer> studentRoster) {
         this.studentRoster = studentRoster;
     }
 }
