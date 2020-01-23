@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class HashMapPractice {
     public static void main(String[] args) {
-        HashMap<Integer, String> students = new HashMap<>();
+        Map<Integer, String> students = new HashMap<>();
         Scanner input = new Scanner(System.in);
-        int newID;
+        Integer newID;
 
         System.out.println("Enter your students (or ENTER to finish):");
 
