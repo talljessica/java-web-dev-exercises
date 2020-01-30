@@ -8,6 +8,7 @@ public class Main {
         Case menu = new Case();
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
+        ArrayList<Topping> toppings = menu.getToppings();
 
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
@@ -18,8 +19,14 @@ public class Main {
         // TODO: Use a Comparator class to sort the 'cones' array in increasing order by the 'cost'
         //  field.
         cones.sort(new ConeComparator());
+
+        // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
         System.out.println("\n Now print cones \n");
         System.out.println(cones);
-        // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
+
+        //Bonus Topping class.
+        toppings.sort(new ToppingComparator());
+        System.out.println("\n Now print toppings \n");
+        System.out.println(toppings);
     }
 }
